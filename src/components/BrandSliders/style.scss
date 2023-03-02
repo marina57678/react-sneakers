@@ -1,0 +1,35 @@
+
+.btn-arrow{
+	// background: url('/public/img/btns/sliderArrowLeft.svg');
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	img{
+		min-width: 10px;
+		width:30px;
+		height:30px;
+	}
+}
+.collage-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(100px ,1fr));
+	min-height: 100px;
+
+	background-color: black;
+	img {
+		max-width: 100%;
+		height: auto; 
+	}
+	.btn-arrow{
+		width: 5px;
+	}
+}
+.grid-column-together2 {
+	display: grid;
+	grid-template-rows:repeat(auto-fit,minmax(100px ,1fr));
+}
+
+
+.collage-slogan{
+	color: white;
+}

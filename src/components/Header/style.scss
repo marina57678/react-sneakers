@@ -1,0 +1,105 @@
+@import "../../variables.scss";
+
+header {
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	color: $title-color;
+}
+
+.header-title{
+	display: none;
+	font-family: 'Port Lligat Slab', serif;
+   font-style: normal;
+}
+
+.header-logo {
+	img{
+		width:70%;
+		min-width:25px;
+	}
+}
+
+.header-slogan {
+	text-align: center;
+	margin-top: 0;
+	font-family: 'Inconsolata';
+	font-size: 17px;
+	font-weight: 200;
+	color: $small-title-color;
+}
+
+.header-name {
+	font-size: 36px;
+	margin-bottom: 0;
+	color: $small-title-color;
+}
+
+.cart-amount {
+	display: none;
+	
+	&.show {
+		display: flex;
+		//?add animation and styles
+	}
+}
+
+.header-menu {
+	ul {
+		display: flex;
+		justify-content:space-around;
+		list-style-type:none;
+		padding: 0;
+	}
+	.header-menu-item {
+		padding: 5px;
+		width: 100%;
+		max-width: 45px;
+		min-width:15px;
+		flex-basis: 33.33%;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.burger-btn {
+	display: block;
+	margin: auto;
+
+	.burger-line {
+		display: block;
+		width: 100%;
+		height: 2px;
+		margin: 3px 0;
+		background-color: $small-title-color;
+		border-radius: 2px;
+
+		@media screen and (min-width: 415px) {
+			height: 3px;
+			margin: 4px 0;
+		}
+	}
+}
+
+
+@media screen and (min-width: 960px) {
+	header .burger-btn {
+		display: none;
+	}
+	header .header-title {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 414px){
+	header .header-menu-item {
+		min-width:30px;
+	}
+	header .header-logo{
+		img {
+			width: 90%;
+		}
+	}
+}

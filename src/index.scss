@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap');
+
+@import "./variables.scss";
+
+
+body {
+// 	margin: 20px 75px;
+	color: $text-color;
+	margin: 10px 15px;
+	font-size: $font-xs;
+// 	@media screen and (min-width: 414px){
+// 		margin: 10px 15px;
+// 	}
+}
+
+
+
+.line {
+	background-color: $line-color;
+	height: 2px;
+	margin: 0 0 clamp(5px, 2%,15px) 0;
+}
+
+
+@media screen and (min-width: 960px) {
+
+}
+
+@media screen and (min-width: 414px){
+
+}
