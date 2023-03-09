@@ -17,6 +17,7 @@
 	.main-nav{
 		display: flex;
 		justify-content: center;
+		margin: clamp(5px, 2%,15px)  0px;
 	}
 }
 
